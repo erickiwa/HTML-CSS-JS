@@ -5,53 +5,73 @@
         <meta name="author" content="Author Name">
         <meta name="description" content="This is a Web Page">
         <meta name="keywords" content="news, programming">
+        <link rel="stylesheet" href="./styles.css">
         
         <title>Web Page</title>
     </head>
     <body>
         <h1>HTML basics</h1>
-        <div>
+        
+        <section>
             <h3>Text Tags</h3>
             
-            <p>
-                Lorem <b>ipsum</b> dolor sit <i>amet</i>, consectetur adipiscing elit, sed do eiusmod <br />
-                tempor incididunt ut labore et <strong>dolore</strong> magna aliqua. Ut enim ad minim veniam,<br /> 
+            <h4 class="par">
+                Lorem <b>ipsum</b> dolor sit <i>amet</i>, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et <strong>dolore</strong> magna aliqua. Ut enim ad minim veniam, 
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </div>
+            </h4>
+            
+            <h4 class="par">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut <p class="none">New <strong>P</strong> tag</p> Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </h4>
+            
+            <h4 class="par">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut <p class="inline">New <strong>P</strong> tag</p> Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </h4>
+            
+            <h4 class="par">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut <p class="block">New <strong>P</strong> tag</p> Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </h4>
+            
+            <h4 class="par">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut <p class="inline-block">New <strong>P</strong> tag</p> Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </h4>
+        </section>
 
-        <br />
-
-        <div>
+        <section>
             <h3>Unordened List</h3>
-            <ul>
-                <li>Item 01</li>
-                <li>Item 02</li>
-                <li>Item 03</li>
+            <ul class="list">
+                <li id="list-items">Item 01</li>
+                <li id="list-items">Item 02</li>
+                <li id="list-items">Item 03</li>
             </ul>
             <h3>Ordened List</h3>
-            <ol>
-                <li>Item 01</li>
-                <li>Item 02</li>
-                <li>Item 03</li>
+            <ol class="list">
+                <li id="list-items">Item 01</li>
+                <li id="list-items">Item 02</li>
+                <li id="list-items">Item 03</li>
             </ol>
-        </div>
+        </section>
         
-        <br /> <br /> <br />
-        
-        <div>
+        <section>
             <h3>Link</h3>
             <a href="https://github.com/erickiwa" target="_blank"> <b>Link</b> </a>
             
             <br /> <br />
             
             <a href="https://github.com/erickiwa" target="_blank"> <img src="./resource/avatar.png" width="50" /> </a>
-        </div>
-            
-        <br />
+        </section>
 
-        <div>
-            <h3>Image/video</h3 style="">
+        <section>
+            <h3>Image/video</h3>
             
             <img src="./resource/html.png" width="50" alt="HTML Logo">
             <img src="./resource/css.png" width="50" alt="CSS logo">
@@ -62,54 +82,41 @@
             <video width="400" controls>
                 <source src="./resource/cabelelelo.mp4" type="video/mp4">
             </video>
-        </div>
-       
-        <br /> <br /> <br />
+        </section>
         
-        <div>
-            <h3>Input</h3>
-            <input type="text" placeholder="user"> <br />
-            <input type="email" placeholder="email"> <br />
-            <input type="password" placeholder="password"> <br />
-            <input type="date"> <br />
-            <input type="number" placeholder="number" min="0" max="10"> <br />
-            <input type="search" placeholder="search something"> <br />
-            
-            <br />
+        <section>
+                <h3>Input</h3>
+            <div class="input">
+                <input type="text" placeholder="user">
+                <input type="email" placeholder="email">
+                <input type="password" placeholder="password">
+                <input type="date">
+                <input type="number" placeholder="number" min="0" max="10">
+                <input type="search" placeholder="search something">
+                <div>
+                    <input type="radio" name="web" class="but">
+                    <label>HTML</label>
+                    <input type="radio" name="web" class="but">
+                    <label>CSS</label>
+                    <input type="radio" name="web" class="but">
+                    <label>JS</label>
+                </div>        
+                <textarea placeholder="example"></textarea>            
+                <label for="inputTag">
+                    <h5 class="buttonFile">Select File</h5>
+                    <input id="inputTag" type="file">
+                </label>
+                <select>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+                <button type="submit">Next</button>
+            </div>
+        </section>
 
-            <input type="radio" name="web">
-            <label>HTML</label>
-            <input type="radio" name="web">
-            <label>CSS</label>
-            <input type="radio" name="web">
-            <label>JS</label>
-            
-            
-            <br /> <br />
-            
-            <textarea placeholder="example"></textarea>
-            
-            <br />
-
-            <input type="file">
-            
-            <br />
-
-            <select>
-                <option>Option 1</option>
-                <option>Option 2</option>
-                <option>Option 3</option>
-            </select>
-
-            <br /> <br />
-
-            <button type="submit">Next</button>
-        </div>
-
-        <br /> <br /> <br />
-
-        <div>
-            <h1>Tables</h1>
+        <section>
+            <h3>Tables</h3>
             
             <style>
                 th, td {
@@ -144,7 +151,10 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </section>
+        <footer class="copy">
+            <h5>© Copyright</h5>
+        </footer>
     </body>
     <!--
         this is a comment

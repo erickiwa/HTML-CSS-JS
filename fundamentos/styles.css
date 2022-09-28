@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslateblue;
+    color: aliceblue;
+}
+
+section {
+    background: linear-gradient(to bottom, #748bfc, #4258c7);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    margin: auto;
+    margin-bottom: 5px;
+    color: purple;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    text-shadow: 2px 2px black;
+}
+
+table {
+    margin: auto;
+}
+
+input {
+    display: block;
+}
+
+
+.par {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    border-radius: 10px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.none {
+    display: none;
+    font-size: 200%;
+}
+
+.inline {
+    display: inline;
+    font-size: 200%;
+}
+
+.block {
+    display: block;
+    font-size: 200%;
+}
+
+.inline-block {
+    display: inline-block;
+    font-size: 200%;
+}
+
+.list {
+    list-style-position: inside;
+    padding: 2px;
+    align-content: center;
+}
+
+#list-items {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 3px;
+    width: 15%;
+}
+
+.input {
+    width: 30%;
+    margin: auto;
+    text-align: left;
+}
+
+.buttonFile {
+    padding: 3px;
+    width: 5rem;
+    background-color: white;
+    border-radius: 5px;
+    color: gray;
+    text-align: center;
+    margin: 5px;
+}
+
+.buttonFile:hover {
+    background-color: black;
+    color: white;
+}
+
+#inputTag {
+    display: none;
+}
+
+.but {
+    margin-top: 5px;
+    display: inline;
+}
