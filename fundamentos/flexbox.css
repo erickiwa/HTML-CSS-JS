@@ -1,0 +1,50 @@
+body {
+    background-color: darkslateblue;
+    color: aliceblue;
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    height: 900px;
+    background-color: gray;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+
+    flex-flow: row wrap;
+    align-content: center;
+
+}
+
+.item {
+    background-color: red;
+    color: #fff;
+    font-size: 3em;
+    width: 100px;
+    height: 300px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+}
+
+.item:first-child {
+    flex-grow: 2;
+    order: 3;
+}
+
+.item:nth-child(3) {
+    order: -1;
+}
+
+.item:last-child {
+    flex-grow: 4;
+}
