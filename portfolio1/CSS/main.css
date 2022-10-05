@@ -24,6 +24,7 @@ main .main-content p {
     width: 75%;
     font-size: 1.2em;
     font-weight: 300;
+    line-height: 1.6;
 }
 
 /* Cards */
@@ -41,6 +42,7 @@ main .techs .cards-container .card {
     background-color: #201F1F;
     border-radius: 8px;
     margin-right: 1.2em;
+    margin-left: 1.2em;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 
